@@ -1,7 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,300;1,400&display=swap');
-
-
-
 :root{
     --primary-color: #669ccb;
     --primary-color-dark: #5681a7;
@@ -132,11 +129,7 @@ header .section__container{
 .header__container button:hover{
     background-color: #0c0c0c;
     color: #f3efef;
-
 }
-
-
-
 @media (min-width:640px){
     .nav__links{
         display: flex;
@@ -154,6 +147,4 @@ header .section__container{
         text-align: left;
 
     }
-
-    
 }
