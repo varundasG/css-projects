@@ -68,6 +68,11 @@ nav{
     align-items: center;
     gap: 2rem;
 }
+
+.nav__links a{
+    text-decoration: none;
+}
+
 .link{
     color: var(--extra-light);
     text-transform: uppercase;
@@ -77,7 +82,7 @@ nav{
 
 }
 .link:hover{
-    color: var(--primary-color);
+    color:var(--primary-color);
 }
 
 header{
@@ -112,29 +117,51 @@ header .section__container{
 
 .header__container p{
     text-align: center; 
+    display:block ;
 
 }
-.header__container button{
+.header__container .read-more-btn{
     padding: 1rem 2rem;
     outline: none;
     border: none;
     border-radius: 5px;
     background-color:#f2f2f2;
     color:#0c0c0c;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1rem;
     cursor: pointer;
     transition: .3s;
+    margin-top: 10px;
 
 }
-.header__container button:hover{
+.header__container .read-more-btn:hover{
     background-color: #0c0c0c;
     color: #f3efef;
 }
 
+/* read more and read less styling start */
+
+#ch{
+    display: none;
+}
+
+#ch:checked ~ .content{
+    display: block;
+}
+
+label{
+    display: inline-block;
+}
+
+.content{
+    display: none;
+}
+
+/* read more and read less styling end */
+/* galley styling */
 
 .journey__container{
-    background-color: #d1d5da;
+    background-color: #464a4e;
 }
 
 .journey__grid{
@@ -174,7 +201,7 @@ header .section__container{
 .place__name span{
     font-style: italic;
 }
-
+/* galley styling ends */
 
 /* Service Page Design Starts */
 
@@ -342,9 +369,6 @@ body .service__container{
 }
 
 /* service page style ends */
-
-
-
 
 @media (min-width:640px){
     .nav__links{
