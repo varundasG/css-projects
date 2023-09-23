@@ -147,24 +147,15 @@ header .section__container{
     background-color: #dce0e3;
     border: 2px solid #85888a;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
-<<<<<<< HEAD
     border-radius:  25px;
-=======
-    border-radius: 25px;
->>>>>>> archana
     overflow: hidden;
 }
 
 .place__card:hover{
     transform:scale(1.2);
-<<<<<<< HEAD
     transition: 3s;
     cursor:pointer;
 
-=======
-    transition: .3s;
-    cursor: pointer;
->>>>>>> archana
 }
 
 .place__name{
