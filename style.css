@@ -73,6 +73,7 @@ nav{
     text-transform: uppercase;
     cursor: pointer;
     transition: .3s;
+    text-decoration: none;
 
 }
 .link:hover{
@@ -146,15 +147,24 @@ header .section__container{
     background-color: #dce0e3;
     border: 2px solid #85888a;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+<<<<<<< HEAD
     border-radius:  25px;
+=======
+    border-radius: 25px;
+>>>>>>> archana
     overflow: hidden;
 }
 
 .place__card:hover{
     transform:scale(1.2);
+<<<<<<< HEAD
     transition: 3s;
     cursor:pointer;
 
+=======
+    transition: .3s;
+    cursor: pointer;
+>>>>>>> archana
 }
 
 .place__name{
@@ -174,6 +184,175 @@ header .section__container{
 .place__name span{
     font-style: italic;
 }
+
+
+/* Service Page Design Starts */
+
+
+body .service__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image :linear-gradient(rgba(0, 0, 0, 0.5),rgba(3, 6, 10, 0.5)),url("images/bg1.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 60px 0;
+    gap: 60px;
+}
+
+.service__container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.service__container h4{
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 800;
+    justify-content: center;
+}
+
+.service__container p{
+    justify-content: center;
+    position: relative;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+.service__container .service__box{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    background: #2e2e2e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.service__container .service__box::before{
+    content: " ";
+    position:absolute;
+    inset: -10px 50px;
+    border-top: 4px solid var(--clr);
+    border-bottom: 4px solid var(--clr);
+    
+    transform: skewY(15deg);
+    transition: 0.5s ease-in-out;
+
+}
+
+.service__container .service__box:hover::before{
+    transform: skewY(0deg);
+    inset: -10px 40px;
+}
+
+.service__container .service__box::after{
+    content: " ";
+    position:absolute;
+    inset: 60px -10px;
+    border-left: 4px solid var(--clr);
+    border-right: 4px solid var(--clr);
+    
+    transform: skew(15deg);
+    transition: 0.5s ease-in-out;
+
+}
+
+.service__container .service__box:hover::after{
+    transform: skew(0deg);
+    inset: 40px -10px;
+}
+
+.service__container .service__box .content{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    padding: 0 20px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    
+}
+
+.service__container .service__box .content i{
+     color: var(--clr);
+     width: 80px;
+     height: 80px;
+     box-shadow: 0 0 0 4px #2e2e2e,
+     0 0 0 6px var(--clr);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 2.5rem;
+     background: #2e2e2e;
+     transition: 0.5s ease-in-out;
+}
+
+.service__container .service__box:hover .content i{
+    background: var(--clr);
+    color: #2e2e2e;
+    box-shadow: 0 0 0 4px #2e2e2e,
+     0 0 0 300px var(--clr);
+} 
+
+.service__container .service__box .text h3{
+    font-size: 1.2rem;
+    color: #FFF;
+    font-weight: 500;
+    transition: 0.5s ease-in-out;
+
+}
+
+.service__container .service__box:hover .text h3{
+    color: #2e2e2e;
+}
+
+.service__container .service__box .text p{
+    color: #777;
+    transition: 0.5 ease-in-out;
+}
+
+.service__container .service__box:hover .text p{
+    color: #2e2e2e;
+}
+
+.service__container .service__box .text a{
+    position: relative;
+    background: var(--clr);
+    color: #2e2e2e;
+    padding: 8px 15px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top:10px;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.service__container .service__box:hover .text a{
+    background: #2e2e2e;
+    color: var(--clr);
+    cursor: pointer;  
+}
+
+/* service page style ends */
+
 
 
 
