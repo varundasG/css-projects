@@ -16,7 +16,18 @@
         <div class="content">
             <small>WELCOME TO OUR</small>
             <h1>KOLLENGODE<br></h1>
-            <button type="button">take a tour</button>
+            <button type="button" id="tourButton">Take a Tour</button>
+
+    <script>
+        // Function to navigate to Gallery.html when the button is clicked
+        function goToGallery() {
+            window.location.href = 'Gallery.html';
+        }
+
+        // Add an onclick event to the button
+        document.getElementById('tourButton').onclick = goToGallery;
+    </script>
+    
         </div>
         <div class="side-bar">
             <img src="images/about_images/menu.png" class="menu">
